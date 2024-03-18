@@ -1,0 +1,28 @@
+1. Set up the MongoDB Database (noteTakingApp) and collection (notes) for your notes.
+2. Insert data into the collection from the input_data CSV file.
+3. Query Operations:
+- Find All Notes
+- Find Notes Containing a Specific Tag (eg. "tag5")
+- Find Notes Created After a Specific Date (eg. "2023-04-18")
+- Count the Number of Notes
+- Update the Tags for a Note (eg. for note with title: "MongoDB Advanced", change "tag2" to "nosql")
+- Add another tag for a Note (eg. for note with title: "MongoDB Advanced", add "important" tag)
+- Add a list of tags for a Note (eg. for note with title: "mongodb intermediate", add "tag1", "tag2", "tag3")
+- Update the title for a Note (eg. for note with title: "mongodb intermediate", change it to "MongoDB Intermediate")
+- Remove a Tag from a Note (eg. for note with title: "MongoDB Intermediate", remove "tag3")
+- Remove all Tags from a Note (eg. for note with title: "MongoDB Intermediate", remove all tags)
+- Delete a Note (eg. for note with title: "MongoDB Intermediate", delete it)
+- Find Notes by Partial Title (Case Insensitive Search) (eg. for note with title containing "MongoDB", find it)
+- Find Notes by Title (Case Sensitive Search) (eg. for note with title containing "mongodb", find it)
+- List Unique Tags Across All Notes
+- Delete Notes Older Than a Specific Date (eg. for notes created before "2023-11-18", delete them)
+- Sort Notes by Creation Date (Newest First)
+- Sort Notes by Title (Alphabetical Order)
+- Sort Notes by count of tags (Descending Order)
+- Delete all duplicate notes from the collection
+- Retrieve notes that have been updated after their creation date
+- List all notes that contain at least 3 different tags
+- Find notes that do not have any tags associated with them
+- Find notes that have been modified in the year 2024 so far
+- Aggregate notes by the month of creation and count the number of notes created each month
+- Identify notes with the word "important" in the title but without an "important" tag
