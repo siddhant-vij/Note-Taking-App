@@ -1,0 +1,697 @@
+Find All Notes:
+300
+
+
+
+Find Notes Containing a Specific Tag (eg. tag5): 
+64
+
+
+
+Find Notes Created After a Specific Date (eg. 2023-04-18): 
+157
+
+
+
+Update the Tags for a Note (eg. for note with title: MongoDB Advanced, change it to nosql): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Update one of the many Tags for a Note (eg. for note with title: MongoDB Advanced, change nosql to non-relational): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Add another tag for a Note (eg. for note with title: MongoDB Advanced, add important tag): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Add a list of tags for a Note (eg. for note with title: mongodb intermediate, add tag1, tag2, tag3): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Update the title for a Note (eg. for note with title: mongodb intermediate, change it to MongoDB Intermediate): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Remove a Tag from a Note (eg. for note with title: MongoDB Intermediate, remove tag3): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Remove a list of Tags from a Note (eg. for note with title: MongoDB Intermediate, remove tag1 and tag7): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Remove all Tags from a Note (eg. for note with title: MongoDB Intermediate, remove all tags): 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+
+Delete a Note (eg. for note with title: MongoDB Intermediate, delete it): 
+{ acknowledged: true, deletedCount: 1 }
+
+
+
+Find Notes by Partial Title (Case Insensitive Search) (eg. for note with title containing MongoDB, find it): 
+18
+
+
+
+Find Notes by Title (Case Sensitive Search) (eg. for note with title containing mongodb, find it): 
+8
+
+
+
+List Unique Tags Across All Notes: 
+[
+  'important', 'non-relational',
+  'nosql',     'tag1',
+  'tag2',      'tag3',
+  'tag4',      'tag5',
+  'tag6',      'tag7',
+  'tag8',      'tag9'
+]
+
+
+
+Delete Notes Newer Than a Specific Date (eg. for notes created after 2023-12-02, delete them): 
+{ acknowledged: true, deletedCount: 5 }
+
+
+
+Sort Notes by Creation Date (Newest First): 
+[
+  {
+    _id: ObjectId('65f9b76018e5ce14de8bf202'),
+    title: 'eget rutrum at',
+    content: 'sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci',
+    tags: [ 'important', 'tag2', 'tag9', 'tag1' ],
+    created_on: ISODate('2023-12-02T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-03-07T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b753bfe7d370e88bf202'),
+    title: 'id justo',
+    content: 'donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam',
+    tags: [],
+    created_on: ISODate('2023-12-01T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-12-05T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b75c70090363a88bf202'),
+    title: 'neque sapien placerat',
+    content: 'lacus curabitur at ipsum ac tellus semper interdum mauris',
+    tags: [ 'tag3', 'important' ],
+    created_on: ISODate('2023-11-24T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-01-12T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b75d06831f2e798bf202'),
+    title: 'massa quis important nam ',
+    content: 'nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac',
+    tags: [ 'tag8' ],
+    created_on: ISODate('2023-11-19T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-11-19T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b75bf8f17486a58bf202'),
+    title: 'semper interdum',
+    content: 'mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel',
+    tags: [ 'tag7', 'tag4', 'tag9', 'tag5' ],
+    created_on: ISODate('2023-11-16T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-11-16T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b762ef96b0362d8bf202'),
+    title: 'dolor vel est',
+    content: 'eget elit sodales scelerisque mauris sit amet eros suspendisse',
+    tags: [ 'tag3', 'tag6' ],
+    created_on: ISODate('2023-11-15T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-12-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7845007d60af98bf202'),
+    title: 'sit amet nulla',
+    content: 'et ultrices posuere cubilia curae donec pharetra magna vestibulum',
+    tags: [ 'tag5', 'tag4', 'tag9', 'tag7' ],
+    created_on: ISODate('2023-10-30T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-30T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b748f0f5401c1e8bf202'),
+    title: 'mauris morbi non',
+    content: 'metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean',
+    tags: [],
+    created_on: ISODate('2023-10-27T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-27T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b72d99ccb2c0388bf202'),
+    title: 'rutrum nulla tellus',
+    content: 'in est risus auctor sed tristique in tempus sit amet sem fusce',
+    tags: [ 'tag1', 'tag2', 'important' ],
+    created_on: ISODate('2023-10-26T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-26T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b76ffb9c2e7ca78bf202'),
+    title: 'volutpat dui maecenas',
+    content: 'quisque ut erat curabitur gravida nisi at nibh',
+    tags: [ 'tag6', 'tag4', 'tag3' ],
+    created_on: ISODate('2023-10-24T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-01-24T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b75a972c4f17448bf202'),
+    title: 'libero quis orci',
+    content: 'maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet',
+    tags: [],
+    created_on: ISODate('2023-10-23T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-23T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b76b3ac18a405d8bf202'),
+    title: 'dictumst etiam faucibus',
+    content: 'ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis',
+    tags: [ 'tag7', 'tag6', 'tag5', 'tag2', 'tag4' ],
+    created_on: ISODate('2023-10-20T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-01-23T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b754a06693b3a38bf202'),
+    title: 'nec condimentum important inte',
+    content: 'integer ac neque duis bibendum morbi non quam nec dui luctus',
+    tags: [ 'tag2', 'tag1', 'tag8', 'tag7' ],
+    created_on: ISODate('2023-10-19T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-19T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b73509fbb790cf8bf202'),
+    title: 'nonummy integer',
+    content: 'massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi',
+    tags: [],
+    created_on: ISODate('2023-10-16T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-02-21T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7470fa7fa498b8bf202'),
+    title: 'nullam orci pede',
+    content: 'sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique',
+    tags: [ 'tag2' ],
+    created_on: ISODate('2023-10-14T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-14T00:00:00.000Z')
+  }
+]
+
+
+
+Sort Notes by Title (Alphabetical Order): 
+[
+  {
+    _id: ObjectId('65f9b70828db91ce8b8bf202'),
+    title: 'MongoDB Advanced',
+    content: 'MongoDB is a NoSQL database that uses a document-oriented data model',
+    tags: [ 'non-relational', 'important' ],
+    created_on: ISODate('2023-03-20T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-03-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b708aca54014ca8bf202'),
+    title: 'MongoDB Basics important Mong',
+    content: 'MongoDB is a NoSQL database that uses a document-oriented data model',
+    tags: [ 'tag7', 'tag2', 'nosql' ],
+    created_on: ISODate('2023-01-29T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-01-29T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b72fe4cebc9f6c8bf202'),
+    title: 'MongoDB erat quisque erat',
+    content: 'ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius',
+    tags: [ 'tag7', 'tag2', 'tag8' ],
+    created_on: ISODate('2023-01-27T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-01-27T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b71df6873f38768bf202'),
+    title: 'MongoDB et ultrices important impe',
+    content: 'imperdiet nullam orci pede venenatis non sodales sed tincidunt eu',
+    tags: [ 'tag3', 'tag9', 'tag5', 'tag1', 'tag7' ],
+    created_on: ISODate('2023-05-05T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-05-05T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7311181037aa88bf202'),
+    title: 'ac mongodb tellus',
+    content: 'a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices',
+    tags: [ 'tag9', 'tag7', 'tag5' ],
+    created_on: ISODate('2023-10-12T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-01-19T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b718fe2f7529808bf202'),
+    title: 'ac tellus semper',
+    content: 'sed lacus morbi sem mauris laoreet ut rhoncus',
+    tags: [ 'tag9' ],
+    created_on: ISODate('2023-07-28T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-07-28T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b710a0382f74d18bf202'),
+    title: 'aenean auctor',
+    content: 'tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus',
+    tags: [ 'tag4', 'tag5' ],
+    created_on: ISODate('2023-07-04T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-26T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7910695db486c8bf202'),
+    title: 'aenean auctor gravida important ut b',
+    content: 'ut blandit non interdum in ante vestibulum ante ipsum',
+    tags: [ 'tag9' ],
+    created_on: ISODate('2023-10-07T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-07T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b78ded2e94c1f98bf202'),
+    title: 'aliquam lacus important vive',
+    content: 'viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et',
+    tags: [],
+    created_on: ISODate('2023-09-15T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-26T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b72c29ed4928898bf202'),
+    title: 'aliquam lacus morbi',
+    content: 'consequat in consequat ut nulla sed accumsan felis ut at',
+    tags: [ 'important', 'tag7', 'tag4', 'tag1', 'tag2' ],
+    created_on: ISODate('2023-02-16T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-04-04T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7108465c04c118bf202'),
+    title: 'aliquet at',
+    content: 'quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras',
+    tags: [ 'tag1', 'important', 'tag8' ],
+    created_on: ISODate('2023-04-16T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-04-16T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b76a28617889e48bf202'),
+    title: 'aliquet ultrices',
+    content: 'erat fermentum justo nec condimentum neque sapien placerat ante',
+    tags: [],
+    created_on: ISODate('2023-06-05T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-03-07T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b726ec45d1eb278bf202'),
+    title: 'amet justo morbi',
+    content: 'mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla',
+    tags: [ 'tag9', 'tag7' ],
+    created_on: ISODate('2023-08-25T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-12-03T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b764994228b1b48bf202'),
+    title: 'amet sapien',
+    content: 'leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar',
+    tags: [ 'tag5', 'tag9', 'important', 'tag4', 'tag3' ],
+    created_on: ISODate('2023-10-06T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-06T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7551840624f898bf202'),
+    title: 'ante ipsum',
+    content: 'tortor sollicitudin mi sit amet lobortis sapien sapien non mi',
+    tags: [ 'tag2', 'tag4', 'tag9', 'tag3', 'important' ],
+    created_on: ISODate('2023-01-22T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-18T00:00:00.000Z')
+  }
+]
+
+
+
+Sort Notes by count of tags (Descending Order): 
+[
+  {
+    _id: ObjectId('65f9b746a374ca72f08bf202'),
+    title: 'nec condimentum neque',
+    content: 'ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
+    tags: [ 'tag6', 'tag5', 'tag7', 'tag3', 'tag4', 'important' ],
+    created_on: ISODate('2023-02-25T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-02-25T00:00:00.000Z'),
+    tagsCount: 6
+  },
+  {
+    _id: ObjectId('65f9b7941b81b8c2a68bf202'),
+    title: 'et ultrices',
+    content: 'porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla',
+    tags: [ 'tag5', 'tag6', 'tag3', 'tag2', 'tag1', 'important' ],
+    created_on: ISODate('2023-03-30T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-03-30T00:00:00.000Z'),
+    tagsCount: 6
+  },
+  {
+    _id: ObjectId('65f9b7644be8ac680f8bf202'),
+    title: 'consequat lectus in important cubi',
+    content: 'cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a',
+    tags: [ 'tag7', 'tag2', 'tag3', 'tag5', 'tag6', 'important' ],
+    created_on: ISODate('2023-03-05T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-09-09T00:00:00.000Z'),
+    tagsCount: 6
+  },
+  {
+    _id: ObjectId('65f9b71094f14005968bf202'),
+    title: 'vestibulum vestibulum ante',
+    content: 'vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean',
+    tags: [ 'tag4', 'tag3', 'tag2', 'tag1', 'tag8', 'important' ],
+    created_on: ISODate('2023-03-22T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-03-22T00:00:00.000Z'),
+    tagsCount: 6
+  },
+  {
+    _id: ObjectId('65f9b71df6873f38768bf202'),
+    title: 'MongoDB et ultrices important impe',
+    content: 'imperdiet nullam orci pede venenatis non sodales sed tincidunt eu',
+    tags: [ 'tag3', 'tag9', 'tag5', 'tag1', 'tag7' ],
+    created_on: ISODate('2023-05-05T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-05-05T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b70b8fe56e33dc8bf202'),
+    title: 'quam fringilla rhoncus',
+    content: 'massa donec dapibus duis at velit eu est congue elementum in hac habitasse',
+    tags: [ 'tag5', 'tag3', 'tag7', 'tag2', 'important' ],
+    created_on: ISODate('2023-03-12T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-05-13T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b718561fd0f2ec8bf202'),
+    title: 'nisl duis MongoDB',
+    content: 'parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum',
+    tags: [ 'tag2', 'tag9', 'tag1', 'important', 'tag7' ],
+    created_on: ISODate('2023-04-24T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-13T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b71a112e39c50c8bf202'),
+    title: 'primis in',
+    content: 'augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt',
+    tags: [ 'tag7', 'important', 'tag2', 'tag3', 'tag8' ],
+    created_on: ISODate('2023-02-19T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-02-19T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b7200028c3caa98bf202'),
+    title: 'mattis odio donec important sed ',
+    content: 'sed accumsan felis ut at dolor quis odio consequat varius',
+    tags: [ 'tag7', 'tag1', 'tag8', 'tag3', 'tag5' ],
+    created_on: ISODate('2023-05-18T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-05-18T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b71c15da068eaa8bf202'),
+    title: 'dui proin',
+    content: 'id consequat in consequat ut nulla sed accumsan felis ut',
+    tags: [ 'tag6', 'important', 'tag4', 'tag7', 'tag2' ],
+    created_on: ISODate('2023-06-22T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-06-22T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b714d19337db0e8bf202'),
+    title: 'duis faucibus accumsan',
+    content: 'vestibulum quam sapien varius ut blandit non interdum',
+    tags: [ 'important', 'tag3', 'tag4', 'tag5', 'tag7' ],
+    created_on: ISODate('2023-02-19T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-02-19T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b70eff3ffe87cd8bf202'),
+    title: 'dapibus dolor vel',
+    content: 'mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing',
+    tags: [ 'tag9', 'important', 'tag5', 'tag8', 'tag4' ],
+    created_on: ISODate('2023-02-28T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-02-28T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b71767d894dc5c8bf202'),
+    title: 'mauris enim leo',
+    content: 'in faucibus orci luctus et ultrices posuere cubilia',
+    tags: [ 'important', 'tag8', 'tag3', 'tag2', 'tag6' ],
+    created_on: ISODate('2023-01-15T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-01-15T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b717413f2153918bf202'),
+    title: 'curabitur gravida nisi',
+    content: 'sapien a libero nam dui proin leo odio porttitor id',
+    tags: [ 'tag7', 'tag6', 'tag4', 'tag8', 'tag3' ],
+    created_on: ISODate('2023-05-05T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-08-20T00:00:00.000Z'),
+    tagsCount: 5
+  },
+  {
+    _id: ObjectId('65f9b7265fed9bde1c8bf202'),
+    title: 'congue eget',
+    content: 'nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam',
+    tags: [ 'tag1', 'tag3', 'tag8', 'tag6', 'tag2' ],
+    created_on: ISODate('2023-04-01T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-04-03T00:00:00.000Z'),
+    tagsCount: 5
+  }
+]
+
+
+
+Delete all duplicate notes from the collection: 
+Count (Before deletion of duplicates): 
+294
+Count (After deletion of duplicates): 
+275
+
+
+
+Retrieve notes that have been updated after their creation date: 
+[
+  {
+    _id: ObjectId('65f9b70a6f40ecf6c88bf202'),
+    title: 'duis faucibus',
+    content: 'consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim',
+    tags: [ 'tag5', 'important' ],
+    created_on: ISODate('2023-03-06T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-08-11T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b70b8fe56e33dc8bf202'),
+    title: 'quam fringilla rhoncus',
+    content: 'massa donec dapibus duis at velit eu est congue elementum in hac habitasse',
+    tags: [ 'tag5', 'tag3', 'tag7', 'tag2', 'important' ],
+    created_on: ISODate('2023-03-12T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-05-13T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b70d4d312b8f608bf202'),
+    title: 'quam nec',
+    content: 'nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas',
+    tags: [ 'tag5' ],
+    created_on: ISODate('2023-05-06T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-09-22T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b70f68adf9c9a38bf202'),
+    title: 'pede lobortis ligula important ipsu',
+    content: 'ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla',
+    tags: [ 'tag5', 'tag7' ],
+    created_on: ISODate('2023-02-19T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-03-15T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b710a0382f74d18bf202'),
+    title: 'aenean auctor',
+    content: 'tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus',
+    tags: [ 'tag4', 'tag5' ],
+    created_on: ISODate('2023-07-04T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-26T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7110af02916008bf202'),
+    title: 'consequat mongodb dui nec important erat',
+    content: 'erat eros viverra eget congue eget semper rutrum nulla nunc purus',
+    tags: [ 'tag1', 'tag9', 'tag3' ],
+    created_on: ISODate('2023-05-18T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-07-01T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b71186ec04e9098bf202'),
+    title: 'integer aliquet',
+    content: 'cursus urna ut tellus nulla ut erat id',
+    tags: [ 'tag8' ],
+    created_on: ISODate('2023-09-01T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-12-08T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b712b218e3e9338bf202'),
+    title: 'et magnis',
+    content: 'tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien',
+    tags: [],
+    created_on: ISODate('2023-07-06T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-12-10T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b71468eaf5d1ee8bf202'),
+    title: 'est quam',
+    content: 'mi sit amet lobortis sapien sapien non mi integer ac neque',
+    tags: [ 'tag4' ],
+    created_on: ISODate('2023-05-11T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-01-28T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b715d1379b19ed8bf202'),
+    title: 'ipsum integer a',
+    content: 'mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla',
+    tags: [ 'tag6', 'tag9', 'tag8' ],
+    created_on: ISODate('2023-01-11T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-02-08T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7159f5d4cd8488bf202'),
+    title: 'id sapien MongoDB in',
+    content: 'massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu',
+    tags: [ 'tag3', 'important', 'tag7', 'tag1' ],
+    created_on: ISODate('2023-02-04T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-19T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b717413f2153918bf202'),
+    title: 'curabitur gravida nisi',
+    content: 'sapien a libero nam dui proin leo odio porttitor id',
+    tags: [ 'tag7', 'tag6', 'tag4', 'tag8', 'tag3' ],
+    created_on: ISODate('2023-05-05T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-08-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b718561fd0f2ec8bf202'),
+    title: 'nisl duis MongoDB',
+    content: 'parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum',
+    tags: [ 'tag2', 'tag9', 'tag1', 'important', 'tag7' ],
+    created_on: ISODate('2023-04-24T00:00:00.000Z'),
+    last_updated_on: ISODate('2023-10-13T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b7193d4dd7788a8bf202'),
+    title: 'commodo MongoDB vulputate',
+    content: 'ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id',
+    tags: [ 'tag7', 'tag8', 'tag9' ],
+    created_on: ISODate('2023-08-01T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-02-20T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('65f9b71a31bd81d1fd8bf202'),
+    title: 'integer a nibh important nisi',
+    content: 'nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium',
+    tags: [ 'tag2' ],
+    created_on: ISODate('2023-03-15T00:00:00.000Z'),
+    last_updated_on: ISODate('2024-02-04T00:00:00.000Z')
+  }
+]
+
+
+
+List all notes that contain at least 3 different tags: 
+46
+
+
+
+Find notes that do not have any tags associated with them: 
+33
+
+
+
+Find notes that have been modified in the year 2024 so far: 
+27
+
+
+
+Aggregate notes by the month of creation and count the number of notes created each month: 
+[
+  { _id: '2023-01', count: 37 },
+  { _id: '2023-02', count: 33 },
+  { _id: '2023-03', count: 41 },
+  { _id: '2023-04', count: 35 },
+  { _id: '2023-05', count: 36 },
+  { _id: '2023-06', count: 25 },
+  { _id: '2023-07', count: 16 },
+  { _id: '2023-08', count: 18 },
+  { _id: '2023-09', count: 14 },
+  { _id: '2023-10', count: 16 },
+  { _id: '2023-11', count: 2 },
+  { _id: '2023-12', count: 2 }
+]
+
+
+
+Identify notes with the word important in the title but without an important tag: 
+49
