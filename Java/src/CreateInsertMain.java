@@ -18,9 +18,26 @@ public class CreateInsertMain {
   }
 
   public static void main(String[] args) {
-    // Read notes from CSV file
-    CsvReader csvReader = new CsvReader();
-    csvReader.readNotesFromCSV("Problem/input_data.csv");
+    String flag = null;
+    if (args.length > 1) {
+      System.out.println("Usage: Add only one flag: --c or --j\n\t--c for CSV\n\t--j for JSON");
+      System.exit(1);
+    } else if (args.length == 0) {
+      flag = "--c";
+    } else {
+      flag = args[0];
+    }
+
+    DataReader reader = null;
+    if (flag.equals("--c")) {
+      // Read notes from Csv file
+      reader = new CsvReader();
+      reader.readNotes("Problem/input_data.csv");
+    } else {
+      // Read notes from Json file
+      reader = new JsonReader();
+      reader.readNotes("Problem/input_data.json");
+    }
 
     // URI and database/collection names
     String uri = "mongodb://localhost:27017";
@@ -37,7 +54,7 @@ public class CreateInsertMain {
     MongoCollection<Document> collection = CrudOperations.getCollection(client, dbName, collectionName);
 
     // Insert documents into the collection
-    for (Note note : csvReader.getNotes()) {
+    for (Note note : reader.getNotes()) {
       Document document = new Document();
       document.append("title", note.getTitle());
       document.append("content", note.getContent());

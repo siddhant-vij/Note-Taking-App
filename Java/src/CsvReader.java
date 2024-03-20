@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
-public class CsvReader {
+public class CsvReader implements DataReader {
   private final List<Note> notes;
   private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/uuuu");
 
@@ -22,7 +22,7 @@ public class CsvReader {
     return Collections.unmodifiableList(notes);
   }
 
-  public void readNotesFromCSV(String csvFilePath) {
+  public void readNotes(String csvFilePath) {
     try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
       String line;
       while ((line = br.readLine()) != null) {
