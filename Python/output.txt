@@ -1,0 +1,700 @@
+Find All Notes: 
+Count: 300
+
+
+
+Find Notes Containing a Specific Tag (eg. "tag5"): 
+Count: 64
+
+
+
+Find Notes Created After a Specific Date (eg. "2023-04-18"): 
+Count: 157
+
+
+
+Update the Tags for a Note (eg. for note with title: "MongoDB Advanced", change it to "nosql"): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Update one of the many Tags for a Note (eg. for note with title: "MongoDB Advanced", change "nosql" to "non-relational"): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Add another tag for a Note (eg. for note with title: "MongoDB Advanced", add "important" tag): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Add a list of tags for a Note (eg. for note with title: "mongodb intermediate", add "tag1", "tag2", "tag3"): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Update the title for a Note (eg. for note with title: "mongodb intermediate", change it to "MongoDB Intermediate"): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Remove a Tag from a Note (eg. for note with title: "MongoDB Intermediate", remove "tag3"): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Remove a list of Tags from a Note (eg. for note with title: "MongoDB Intermediate", remove "tag1" and "tag7"): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Remove all Tags from a Note (eg. for note with title: "MongoDB Intermediate", remove all tags): 
+{
+	"acknowledged": True,
+	"insertedId": null,
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Delete a Note (eg. for note with title: "MongoDB Intermediate", delete it): 
+AcknowledgedDeleteResult{deletedCount=1}
+
+
+
+Find Notes by Partial Title (Case Insensitive Search) (eg. for note with title containing "MongoDB", find it): 
+Count: 18
+
+
+
+Find Notes by Title (Case Sensitive Search) (eg. for note with title containing "mongodb", find it): 
+Count: 8
+
+
+
+List Unique Tags Across All Notes: 
+[
+	"important",	"non-relational"
+	"nosql",	"tag1"
+	"tag2",	"tag3"
+	"tag4",	"tag5"
+	"tag6",	"tag7"
+	"tag8",	"tag9"
+]
+
+
+
+Delete Notes Newer Than a Specific Date (eg. for notes created after "2023-12-02", delete them): 
+AcknowledgedDeleteResult{deletedCount=5}
+
+
+
+Sort Notes by Creation Date (Newest First): 
+[
+	{
+		_id: 65fccce4a7eb7d7cacf18d2b,
+		title: eget rutrum at,
+		content: sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci,
+		tags: ['important', 'tag2', 'tag9', 'tag1'],
+		created_on: 2023-12-02 00:00:00,
+		last_updated_on: 2024-03-07 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d0f,
+		title: id justo,
+		content: donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam,
+		tags: [],
+		created_on: 2023-12-01 00:00:00,
+		last_updated_on: 2023-12-05 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d23,
+		title: neque sapien placerat,
+		content: lacus curabitur at ipsum ac tellus semper interdum mauris,
+		tags: ['tag3', 'important'],
+		created_on: 2023-11-24 00:00:00,
+		last_updated_on: 2024-01-12 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d25,
+		title: massa quis important nam,
+		content: nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac,
+		tags: ['tag8'],
+		created_on: 2023-11-19 00:00:00,
+		last_updated_on: 2023-11-19 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d20,
+		title: semper interdum,
+		content: mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel,
+		tags: ['tag7', 'tag4', 'tag9', 'tag5'],
+		created_on: 2023-11-16 00:00:00,
+		last_updated_on: 2023-11-16 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d2e,
+		title: dolor vel est,
+		content: eget elit sodales scelerisque mauris sit amet eros suspendisse,
+		tags: ['tag3', 'tag6'],
+		created_on: 2023-11-15 00:00:00,
+		last_updated_on: 2023-12-30 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d72,
+		title: sit amet nulla,
+		content: et ultrices posuere cubilia curae donec pharetra magna vestibulum,
+		tags: ['tag5', 'tag4', 'tag9', 'tag7'],
+		created_on: 2023-10-30 00:00:00,
+		last_updated_on: 2023-10-30 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cf8,
+		title: mauris morbi non,
+		content: metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean,
+		tags: [],
+		created_on: 2023-10-27 00:00:00,
+		last_updated_on: 2023-10-27 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cc2,
+		title: rutrum nulla tellus,
+		content: in est risus auctor sed tristique in tempus sit amet sem fusce,
+		tags: ['tag1', 'tag2', 'important'],
+		created_on: 2023-10-26 00:00:00,
+		last_updated_on: 2023-10-26 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d49,
+		title: volutpat dui maecenas,
+		content: quisque ut erat curabitur gravida nisi at nibh,
+		tags: ['tag6', 'tag4', 'tag3'],
+		created_on: 2023-10-24 00:00:00,
+		last_updated_on: 2024-01-24 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d1e,
+		title: libero quis orci,
+		content: maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet,
+		tags: [],
+		created_on: 2023-10-23 00:00:00,
+		last_updated_on: 2023-10-23 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d41,
+		title: dictumst etiam faucibus,
+		content: ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis,
+		tags: ['tag7', 'tag6', 'tag5', 'tag2', 'tag4'],
+		created_on: 2023-10-20 00:00:00,
+		last_updated_on: 2024-01-23 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d11,
+		title: nec condimentum important inte,
+		content: integer ac neque duis bibendum morbi non quam nec dui luctus,
+		tags: ['tag2', 'tag1', 'tag8', 'tag7'],
+		created_on: 2023-10-19 00:00:00,
+		last_updated_on: 2023-10-19 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cd2,
+		title: nonummy integer,
+		content: massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi,
+		tags: [],
+		created_on: 2023-10-16 00:00:00,
+		last_updated_on: 2024-02-21 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cf6
+		title: nullam orci pede
+		content: sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique
+		tags: ['tag2']
+		created_on: 2023-10-14 00:00:00
+		last_updated_on: 2023-10-14 00:00:00
+	}
+]
+
+
+
+Sort Notes by Title (Alphabetical Order): 
+[
+	{
+		_id: 65fccce4a7eb7d7cacf18c79,
+		title: MongoDB Advanced,
+		content: MongoDB is a NoSQL database that uses a document-oriented data model,
+		tags: ['non-relational', 'important'],
+		created_on: 2023-03-20 00:00:00,
+		last_updated_on: 2023-03-20 00:00:00,
+	},
+	{
+		_id: 65fccce3a7eb7d7cacf18c78,
+		title: MongoDB Basics important Mong,
+		content: MongoDB is a NoSQL database that uses a document-oriented data model,
+		tags: ['tag7', 'tag2', 'nosql'],
+		created_on: 2023-01-29 00:00:00,
+		last_updated_on: 2023-01-29 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cc6,
+		title: MongoDB erat quisque erat,
+		content: ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius,
+		tags: ['tag7', 'tag2', 'tag8'],
+		created_on: 2023-01-27 00:00:00,
+		last_updated_on: 2023-01-27 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18ca3,
+		title: MongoDB et ultrices important impe,
+		content: imperdiet nullam orci pede venenatis non sodales sed tincidunt eu,
+		tags: ['tag3', 'tag9', 'tag5', 'tag1', 'tag7'],
+		created_on: 2023-05-05 00:00:00,
+		last_updated_on: 2023-05-05 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cc9,
+		title: ac mongodb tellus,
+		content: a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices,
+		tags: ['tag9', 'tag7', 'tag5'],
+		created_on: 2023-10-12 00:00:00,
+		last_updated_on: 2024-01-19 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c99,
+		title: ac tellus semper,
+		content: sed lacus morbi sem mauris laoreet ut rhoncus,
+		tags: ['tag9'],
+		created_on: 2023-07-28 00:00:00,
+		last_updated_on: 2023-07-28 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c8a,
+		title: aenean auctor,
+		content: tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus,
+		tags: ['tag4', 'tag5'],
+		created_on: 2023-07-04 00:00:00,
+		last_updated_on: 2023-10-26 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d8c,
+		title: aenean auctor gravida important ut b,
+		content: ut blandit non interdum in ante vestibulum ante ipsum,
+		tags: ['tag9'],
+		created_on: 2023-10-07 00:00:00,
+		last_updated_on: 2023-10-07 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d85,
+		title: aliquam lacus important vive,
+		content: viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et,
+		tags: [],
+		created_on: 2023-09-15 00:00:00,
+		last_updated_on: 2023-10-26 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cbf,
+		title: aliquam lacus morbi,
+		content: consequat in consequat ut nulla sed accumsan felis ut at,
+		tags: ['important', 'tag7', 'tag4', 'tag1', 'tag2'],
+		created_on: 2023-02-16 00:00:00,
+		last_updated_on: 2023-04-04 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c89,
+		title: aliquet at,
+		content: quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras,
+		tags: ['tag1', 'important', 'tag8'],
+		created_on: 2023-04-16 00:00:00,
+		last_updated_on: 2023-04-16 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d3e,
+		title: aliquet ultrices,
+		content: erat fermentum justo nec condimentum neque sapien placerat ante,
+		tags: [],
+		created_on: 2023-06-05 00:00:00,
+		last_updated_on: 2024-03-07 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cb6,
+		title: amet justo morbi,
+		content: mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla,
+		tags: ['tag9', 'tag7'],
+		created_on: 2023-08-25 00:00:00,
+		last_updated_on: 2023-12-03 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d32,
+		title: amet sapien,
+		content: leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar,
+		tags: ['tag5', 'tag9', 'important', 'tag4', 'tag3'],
+		created_on: 2023-10-06 00:00:00,
+		last_updated_on: 2023-10-06 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d14
+		title: ante ipsum
+		content: tortor sollicitudin mi sit amet lobortis sapien sapien non mi
+		tags: ['tag2', 'tag4', 'tag9', 'tag3', 'important']
+		created_on: 2023-01-22 00:00:00
+		last_updated_on: 2023-10-18 00:00:00
+	}
+]
+
+
+
+Sort Notes by count of tags (Descending Order): 
+[
+	{
+		_id: 65fccce4a7eb7d7cacf18cf5,
+		title: nec condimentum neque,
+		content: ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae,
+		tags: ['tag6', 'tag5', 'tag7', 'tag3', 'tag4', 'important'],
+		created_on: 2023-02-25 00:00:00,
+		last_updated_on: 2023-02-25 00:00:00,
+		tag_count: 6,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d93,
+		title: et ultrices,
+		content: porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla,
+		tags: ['tag5', 'tag6', 'tag3', 'tag2', 'tag1', 'important'],
+		created_on: 2023-03-30 00:00:00,
+		last_updated_on: 2023-03-30 00:00:00,
+		tag_count: 6,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18d33,
+		title: consequat lectus in important cubi,
+		content: cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a,
+		tags: ['tag7', 'tag2', 'tag3', 'tag5', 'tag6', 'important'],
+		created_on: 2023-03-05 00:00:00,
+		last_updated_on: 2023-09-09 00:00:00,
+		tag_count: 6,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c88,
+		title: vestibulum vestibulum ante,
+		content: vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean,
+		tags: ['tag4', 'tag3', 'tag2', 'tag1', 'tag8', 'important'],
+		created_on: 2023-03-22 00:00:00,
+		last_updated_on: 2023-03-22 00:00:00,
+		tag_count: 6,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18ca3,
+		title: MongoDB et ultrices important impe,
+		content: imperdiet nullam orci pede venenatis non sodales sed tincidunt eu,
+		tags: ['tag3', 'tag9', 'tag5', 'tag1', 'tag7'],
+		created_on: 2023-05-05 00:00:00,
+		last_updated_on: 2023-05-05 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c7f,
+		title: quam fringilla rhoncus,
+		content: massa donec dapibus duis at velit eu est congue elementum in hac habitasse,
+		tags: ['tag5', 'tag3', 'tag7', 'tag2', 'important'],
+		created_on: 2023-03-12 00:00:00,
+		last_updated_on: 2023-05-13 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c98,
+		title: nisl duis MongoDB,
+		content: parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum,
+		tags: ['tag2', 'tag9', 'tag1', 'important', 'tag7'],
+		created_on: 2023-04-24 00:00:00,
+		last_updated_on: 2023-10-13 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c9c,
+		title: primis in,
+		content: augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt,
+		tags: ['tag7', 'important', 'tag2', 'tag3', 'tag8'],
+		created_on: 2023-02-19 00:00:00,
+		last_updated_on: 2023-02-19 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18ca9,
+		title: mattis odio donec important sed,
+		content: sed accumsan felis ut at dolor quis odio consequat varius,
+		tags: ['tag7', 'tag1', 'tag8', 'tag3', 'tag5'],
+		created_on: 2023-05-18 00:00:00,
+		last_updated_on: 2023-05-18 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18ca1,
+		title: dui proin,
+		content: id consequat in consequat ut nulla sed accumsan felis ut,
+		tags: ['tag6', 'important', 'tag4', 'tag7', 'tag2'],
+		created_on: 2023-06-22 00:00:00,
+		last_updated_on: 2023-06-22 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c91,
+		title: duis faucibus accumsan,
+		content: vestibulum quam sapien varius ut blandit non interdum,
+		tags: ['important', 'tag3', 'tag4', 'tag5', 'tag7'],
+		created_on: 2023-02-19 00:00:00,
+		last_updated_on: 2023-02-19 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c84,
+		title: dapibus dolor vel,
+		content: mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing,
+		tags: ['tag9', 'important', 'tag5', 'tag8', 'tag4'],
+		created_on: 2023-02-28 00:00:00,
+		last_updated_on: 2023-02-28 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c97,
+		title: mauris enim leo,
+		content: in faucibus orci luctus et ultrices posuere cubilia,
+		tags: ['important', 'tag8', 'tag3', 'tag2', 'tag6'],
+		created_on: 2023-01-15 00:00:00,
+		last_updated_on: 2023-01-15 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c96,
+		title: curabitur gravida nisi,
+		content: sapien a libero nam dui proin leo odio porttitor id,
+		tags: ['tag7', 'tag6', 'tag4', 'tag8', 'tag3'],
+		created_on: 2023-05-05 00:00:00,
+		last_updated_on: 2023-08-20 00:00:00,
+		tag_count: 5
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18cb5
+		title: congue eget
+		content: nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam
+		tags: ['tag1', 'tag3', 'tag8', 'tag6', 'tag2']
+		created_on: 2023-04-01 00:00:00
+		last_updated_on: 2023-04-03 00:00:00
+		tag_count: 5
+	}
+]
+
+
+
+Delete all duplicate notes from the collection: 
+Count (Before deletion of duplicates):
+294
+Count (After deletion of duplicates):
+275
+
+
+
+Retrieve notes that have been updated after their creation date: 
+[
+	{
+		_id: 65fccce4a7eb7d7cacf18c7c,
+		title: duis faucibus,
+		content: consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim,
+		tags: ['tag5', 'important'],
+		created_on: 2023-03-06 00:00:00,
+		last_updated_on: 2023-08-11 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c7f,
+		title: quam fringilla rhoncus,
+		content: massa donec dapibus duis at velit eu est congue elementum in hac habitasse,
+		tags: ['tag5', 'tag3', 'tag7', 'tag2', 'important'],
+		created_on: 2023-03-12 00:00:00,
+		last_updated_on: 2023-05-13 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c82,
+		title: quam nec,
+		content: nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas,
+		tags: ['tag5'],
+		created_on: 2023-05-06 00:00:00,
+		last_updated_on: 2023-09-22 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c86,
+		title: pede lobortis ligula important ipsu,
+		content: ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla,
+		tags: ['tag5', 'tag7'],
+		created_on: 2023-02-19 00:00:00,
+		last_updated_on: 2024-03-15 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c8a,
+		title: aenean auctor,
+		content: tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus,
+		tags: ['tag4', 'tag5'],
+		created_on: 2023-07-04 00:00:00,
+		last_updated_on: 2023-10-26 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c8b,
+		title: consequat mongodb dui nec important erat,
+		content: erat eros viverra eget congue eget semper rutrum nulla nunc purus,
+		tags: ['tag1', 'tag9', 'tag3'],
+		created_on: 2023-05-18 00:00:00,
+		last_updated_on: 2023-07-01 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c8c,
+		title: integer aliquet,
+		content: cursus urna ut tellus nulla ut erat id,
+		tags: ['tag8'],
+		created_on: 2023-09-01 00:00:00,
+		last_updated_on: 2023-12-08 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c8d,
+		title: et magnis,
+		content: tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien,
+		tags: [],
+		created_on: 2023-07-06 00:00:00,
+		last_updated_on: 2023-12-10 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c90,
+		title: est quam,
+		content: mi sit amet lobortis sapien sapien non mi integer ac neque,
+		tags: ['tag4'],
+		created_on: 2023-05-11 00:00:00,
+		last_updated_on: 2024-01-28 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c92,
+		title: ipsum integer a,
+		content: mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla,
+		tags: ['tag6', 'tag9', 'tag8'],
+		created_on: 2023-01-11 00:00:00,
+		last_updated_on: 2023-02-08 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c93,
+		title: id sapien MongoDB in,
+		content: massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu,
+		tags: ['tag3', 'important', 'tag7', 'tag1'],
+		created_on: 2023-02-04 00:00:00,
+		last_updated_on: 2023-10-19 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c96,
+		title: curabitur gravida nisi,
+		content: sapien a libero nam dui proin leo odio porttitor id,
+		tags: ['tag7', 'tag6', 'tag4', 'tag8', 'tag3'],
+		created_on: 2023-05-05 00:00:00,
+		last_updated_on: 2023-08-20 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c98,
+		title: nisl duis MongoDB,
+		content: parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum,
+		tags: ['tag2', 'tag9', 'tag1', 'important', 'tag7'],
+		created_on: 2023-04-24 00:00:00,
+		last_updated_on: 2023-10-13 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c9b,
+		title: commodo MongoDB vulputate,
+		content: ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id,
+		tags: ['tag7', 'tag8', 'tag9'],
+		created_on: 2023-08-01 00:00:00,
+		last_updated_on: 2024-02-20 00:00:00,
+	},
+	{
+		_id: 65fccce4a7eb7d7cacf18c9d
+		title: integer a nibh important nisi
+		content: nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium
+		tags: ['tag2']
+		created_on: 2023-03-15 00:00:00
+		last_updated_on: 2024-02-04 00:00:00
+	}
+]
+
+
+
+List all notes that contain at least 3 different tags: 
+Count: 45
+
+
+
+Find notes that do not have any tags associated with them: 
+Count: 33
+
+
+
+Find notes that have been modified in the year 2024 so far: 
+Count: 26
+
+
+
+Aggregate notes by the month of creation and count the number of notes created each month: 
+[
+	{		_id: 2023-01,		count: 36}
+	{		_id: 2023-02,		count: 35}
+	{		_id: 2023-03,		count: 41}
+	{		_id: 2023-04,		count: 34}
+	{		_id: 2023-05,		count: 36}
+	{		_id: 2023-06,		count: 25}
+	{		_id: 2023-07,		count: 15}
+	{		_id: 2023-08,		count: 18}
+	{		_id: 2023-09,		count: 14}
+	{		_id: 2023-10,		count: 16}
+	{		_id: 2023-11,		count: 3}
+	{		_id: 2023-12,		count: 2}
+]
+
+
+
+Identify notes with the word "important" in the title but without an "important" tag: 
+Count: 49
+
+
+
