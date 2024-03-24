@@ -1,0 +1,700 @@
+Find All Notes: 
+Count: 300
+
+
+
+Find Notes Containing a Specific Tag (eg. "tag5"): 
+Count: 64
+
+
+
+Find Notes Created After a Specific Date (eg. "2023-04-18"): 
+Count: 157
+
+
+
+Update the Tags for a Note (eg. for note with title: "MongoDB Advanced", change it to "nosql"): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Update one of the many Tags for a Note (eg. for note with title: "MongoDB Advanced", change "nosql" to "non-relational"): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Add another tag for a Note (eg. for note with title: "MongoDB Advanced", add "important" tag): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Add a list of tags for a Note (eg. for note with title: "mongodb intermediate", add "tag1", "tag2", "tag3"): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Update the title for a Note (eg. for note with title: "mongodb intermediate", change it to "MongoDB Intermediate"): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Remove a Tag from a Note (eg. for note with title: "MongoDB Intermediate", remove "tag3"): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Remove a list of Tags from a Note (eg. for note with title: "MongoDB Intermediate", remove "tag1" and "tag7"): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Remove all Tags from a Note (eg. for note with title: "MongoDB Intermediate", remove all tags): 
+{
+	"acknowledged": true,
+	"insertedId": "<nil>",
+	"matchedCount": 1,
+	"modifiedCount": 1,
+	"upsertedCount": 0
+}
+
+
+
+Delete a Note (eg. for note with title: "MongoDB Intermediate", delete it): 
+AcknowledgedDeleteResult{deletedCount=1}
+
+
+
+Find Notes by Partial Title (Case Insensitive Search) (eg. for note with title containing "MongoDB", find it): 
+Count: 18
+
+
+
+Find Notes by Title (Case Sensitive Search) (eg. for note with title containing "mongodb", find it): 
+Count: 8
+
+
+
+List Unique Tags Across All Notes: 
+[
+	"important",	"non-relational"
+	"nosql",	"tag1"
+	"tag2",	"tag3"
+	"tag4",	"tag5"
+	"tag6",	"tag7"
+	"tag8",	"tag9"
+]
+
+
+
+Delete Notes Newer Than a Specific Date (eg. for notes created after "2023-12-02", delete them): 
+AcknowledgedDeleteResult{deletedCount=5}
+
+
+
+Sort Notes by Creation Date (Newest First): 
+[
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb92c")",
+		"title": "eget rutrum at",
+		"content": "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci",
+		"tags": "[important tag2 tag9 tag1]",
+		"created_on": "1701475200000",
+		"last_updated_on": "1709769600000",
+	},
+	{
+		"tags": "[]",
+		"created_on": "1701388800000",
+		"last_updated_on": "1701734400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb910")",
+		"title": "id justo",
+		"content": "donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb924")",
+		"title": "neque sapien placerat",
+		"content": "lacus curabitur at ipsum ac tellus semper interdum mauris",
+		"tags": "[tag3 important]",
+		"created_on": "1700784000000",
+		"last_updated_on": "1705017600000",
+	},
+	{
+		"last_updated_on": "1700352000000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb926")",
+		"title": "massa quis important nam",
+		"content": "nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac",
+		"tags": "[tag8]",
+		"created_on": "1700352000000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb921")",
+		"title": "semper interdum",
+		"content": "mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel",
+		"tags": "[tag7 tag4 tag9 tag5]",
+		"created_on": "1700092800000",
+		"last_updated_on": "1700092800000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb92f")",
+		"title": "dolor vel est",
+		"content": "eget elit sodales scelerisque mauris sit amet eros suspendisse",
+		"tags": "[tag3 tag6]",
+		"created_on": "1700006400000",
+		"last_updated_on": "1703894400000",
+	},
+	{
+		"title": "sit amet nulla",
+		"content": "et ultrices posuere cubilia curae donec pharetra magna vestibulum",
+		"tags": "[tag5 tag4 tag9 tag7]",
+		"created_on": "1698624000000",
+		"last_updated_on": "1698624000000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb973")",
+	},
+	{
+		"last_updated_on": "1698364800000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8f9")",
+		"title": "mauris morbi non",
+		"content": "metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean",
+		"tags": "[]",
+		"created_on": "1698364800000",
+	},
+	{
+		"tags": "[tag1 tag2 important]",
+		"created_on": "1698278400000",
+		"last_updated_on": "1698278400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8c3")",
+		"title": "rutrum nulla tellus",
+		"content": "in est risus auctor sed tristique in tempus sit amet sem fusce",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb94a")",
+		"title": "volutpat dui maecenas",
+		"content": "quisque ut erat curabitur gravida nisi at nibh",
+		"tags": "[tag6 tag4 tag3]",
+		"created_on": "1698105600000",
+		"last_updated_on": "1706054400000",
+	},
+	{
+		"created_on": "1698019200000",
+		"last_updated_on": "1698019200000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb91f")",
+		"title": "libero quis orci",
+		"content": "maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet",
+		"tags": "[]",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb942")",
+		"title": "dictumst etiam faucibus",
+		"content": "ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis",
+		"tags": "[tag7 tag6 tag5 tag2 tag4]",
+		"created_on": "1697760000000",
+		"last_updated_on": "1705968000000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb912")",
+		"title": "nec condimentum important inte",
+		"content": "integer ac neque duis bibendum morbi non quam nec dui luctus",
+		"tags": "[tag2 tag1 tag8 tag7]",
+		"created_on": "1697673600000",
+		"last_updated_on": "1697673600000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8d3")",
+		"title": "nonummy integer",
+		"content": "massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi",
+		"tags": "[]",
+		"created_on": "1697414400000",
+		"last_updated_on": "1708473600000",
+	},
+	{
+		"tags": "[tag2]",
+		"created_on": "1697241600000",
+		"last_updated_on": "1697241600000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8f7")",
+		"title": "nullam orci pede",
+		"content": "sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique",
+	},
+]
+
+
+
+Sort Notes by Title (Alphabetical Order): 
+[
+	{
+		"created_on": "1679270400000",
+		"last_updated_on": "1679270400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb87a")",
+		"title": "MongoDB Advanced",
+		"content": "MongoDB is a NoSQL database that uses a document-oriented data model",
+		"tags": "[non-relational important]",
+	},
+	{
+		"tags": "[tag7 tag2 nosql]",
+		"created_on": "1674950400000",
+		"last_updated_on": "1674950400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb879")",
+		"title": "MongoDB Basics important Mong",
+		"content": "MongoDB is a NoSQL database that uses a document-oriented data model",
+	},
+	{
+		"title": "MongoDB erat quisque erat",
+		"content": "ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius",
+		"tags": "[tag7 tag2 tag8]",
+		"created_on": "1674777600000",
+		"last_updated_on": "1674777600000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8c7")",
+	},
+	{
+		"content": "imperdiet nullam orci pede venenatis non sodales sed tincidunt eu",
+		"tags": "[tag3 tag9 tag5 tag1 tag7]",
+		"created_on": "1683244800000",
+		"last_updated_on": "1683244800000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8a4")",
+		"title": "MongoDB et ultrices important impe",
+	},
+	{
+		"last_updated_on": "1705622400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8ca")",
+		"title": "ac mongodb tellus",
+		"content": "a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices",
+		"tags": "[tag9 tag7 tag5]",
+		"created_on": "1697068800000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb89a")",
+		"title": "ac tellus semper",
+		"content": "sed lacus morbi sem mauris laoreet ut rhoncus",
+		"tags": "[tag9]",
+		"created_on": "1690502400000",
+		"last_updated_on": "1690502400000",
+	},
+	{
+		"last_updated_on": "1698278400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb88b")",
+		"title": "aenean auctor",
+		"content": "tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus",
+		"tags": "[tag4 tag5]",
+		"created_on": "1688428800000",
+	},
+	{
+		"created_on": "1696636800000",
+		"last_updated_on": "1696636800000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb98d")",
+		"title": "aenean auctor gravida important ut b",
+		"content": "ut blandit non interdum in ante vestibulum ante ipsum",
+		"tags": "[tag9]",
+	},
+	{
+		"created_on": "1694736000000",
+		"last_updated_on": "1698278400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb986")",
+		"title": "aliquam lacus important vive",
+		"content": "viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et",
+		"tags": "[]",
+	},
+	{
+		"last_updated_on": "1680566400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8c0")",
+		"title": "aliquam lacus morbi",
+		"content": "consequat in consequat ut nulla sed accumsan felis ut at",
+		"tags": "[important tag7 tag4 tag1 tag2]",
+		"created_on": "1676505600000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb88a")",
+		"title": "aliquet at",
+		"content": "quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras",
+		"tags": "[tag1 important tag8]",
+		"created_on": "1681603200000",
+		"last_updated_on": "1681603200000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb93f")",
+		"title": "aliquet ultrices",
+		"content": "erat fermentum justo nec condimentum neque sapien placerat ante",
+		"tags": "[]",
+		"created_on": "1685923200000",
+		"last_updated_on": "1709769600000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8b7")",
+		"title": "amet justo morbi",
+		"content": "mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
+		"tags": "[tag9 tag7]",
+		"created_on": "1692921600000",
+		"last_updated_on": "1701561600000",
+	},
+	{
+		"created_on": "1696550400000",
+		"last_updated_on": "1696550400000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb933")",
+		"title": "amet sapien",
+		"content": "leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar",
+		"tags": "[tag5 tag9 important tag4 tag3]",
+	},
+	{
+		"tags": "[tag2 tag4 tag9 tag3 important]",
+		"created_on": "1674345600000",
+		"last_updated_on": "1697587200000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb915")",
+		"title": "ante ipsum",
+		"content": "tortor sollicitudin mi sit amet lobortis sapien sapien non mi",
+	},
+]
+
+
+
+Sort Notes by count of tags (Descending Order): 
+[
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8f6")",
+		"title": "nec condimentum neque",
+		"content": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+		"tags": "[tag6 tag5 tag7 tag3 tag4 important]",
+		"created_on": "1677283200000",
+		"last_updated_on": "1677283200000",
+		"tag_count": "6",
+	},
+	{
+		"created_on": "1680134400000",
+		"last_updated_on": "1680134400000",
+		"tag_count": "6",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb994")",
+		"title": "et ultrices",
+		"content": "porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla",
+		"tags": "[tag5 tag6 tag3 tag2 tag1 important]",
+	},
+	{
+		"tags": "[tag7 tag2 tag3 tag5 tag6 important]",
+		"created_on": "1677974400000",
+		"last_updated_on": "1694217600000",
+		"tag_count": "6",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb934")",
+		"title": "consequat lectus in important cubi",
+		"content": "cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a",
+	},
+	{
+		"created_on": "1679443200000",
+		"last_updated_on": "1679443200000",
+		"tag_count": "6",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb889")",
+		"title": "vestibulum vestibulum ante",
+		"content": "vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean",
+		"tags": "[tag4 tag3 tag2 tag1 tag8 important]",
+	},
+	{
+		"content": "imperdiet nullam orci pede venenatis non sodales sed tincidunt eu",
+		"tags": "[tag3 tag9 tag5 tag1 tag7]",
+		"created_on": "1683244800000",
+		"last_updated_on": "1683244800000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8a4")",
+		"title": "MongoDB et ultrices important impe",
+	},
+	{
+		"title": "quam fringilla rhoncus",
+		"content": "massa donec dapibus duis at velit eu est congue elementum in hac habitasse",
+		"tags": "[tag5 tag3 tag7 tag2 important]",
+		"created_on": "1678579200000",
+		"last_updated_on": "1683936000000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb880")",
+	},
+	{
+		"created_on": "1682294400000",
+		"last_updated_on": "1697155200000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb899")",
+		"title": "nisl duis MongoDB",
+		"content": "parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum",
+		"tags": "[tag2 tag9 tag1 important tag7]",
+	},
+	{
+		"content": "augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt",
+		"tags": "[tag7 important tag2 tag3 tag8]",
+		"created_on": "1676764800000",
+		"last_updated_on": "1676764800000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb89d")",
+		"title": "primis in",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8aa")",
+		"title": "mattis odio donec important sed",
+		"content": "sed accumsan felis ut at dolor quis odio consequat varius",
+		"tags": "[tag7 tag1 tag8 tag3 tag5]",
+		"created_on": "1684368000000",
+		"last_updated_on": "1684368000000",
+		"tag_count": "5",
+	},
+	{
+		"title": "dui proin",
+		"content": "id consequat in consequat ut nulla sed accumsan felis ut",
+		"tags": "[tag6 important tag4 tag7 tag2]",
+		"created_on": "1687392000000",
+		"last_updated_on": "1687392000000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8a2")",
+	},
+	{
+		"last_updated_on": "1676764800000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb892")",
+		"title": "duis faucibus accumsan",
+		"content": "vestibulum quam sapien varius ut blandit non interdum",
+		"tags": "[important tag3 tag4 tag5 tag7]",
+		"created_on": "1676764800000",
+	},
+	{
+		"last_updated_on": "1677542400000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb885")",
+		"title": "dapibus dolor vel",
+		"content": "mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing",
+		"tags": "[tag9 important tag5 tag8 tag4]",
+		"created_on": "1677542400000",
+	},
+	{
+		"tags": "[important tag8 tag3 tag2 tag6]",
+		"created_on": "1673740800000",
+		"last_updated_on": "1673740800000",
+		"tag_count": "5",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb898")",
+		"title": "mauris enim leo",
+		"content": "in faucibus orci luctus et ultrices posuere cubilia",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb897")",
+		"title": "curabitur gravida nisi",
+		"content": "sapien a libero nam dui proin leo odio porttitor id",
+		"tags": "[tag7 tag6 tag4 tag8 tag3]",
+		"created_on": "1683244800000",
+		"last_updated_on": "1692489600000",
+		"tag_count": "5",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8b6")",
+		"title": "congue eget",
+		"content": "nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam",
+		"tags": "[tag1 tag3 tag8 tag6 tag2]",
+		"created_on": "1680307200000",
+		"last_updated_on": "1680480000000",
+		"tag_count": "5",
+	},
+]
+
+
+
+Delete all duplicate notes from the collection: 
+Count (Before deletion of duplicates): 
+294
+Count (Before deletion of duplicates): 
+275
+
+
+
+Retrieve notes that have been updated after their creation date: 
+[
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb87d")",
+		"title": "duis faucibus",
+		"content": "consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim",
+		"tags": "[tag5 important]",
+		"created_on": "1678060800000",
+		"last_updated_on": "1691712000000",
+	},
+	{
+		"title": "quam fringilla rhoncus",
+		"content": "massa donec dapibus duis at velit eu est congue elementum in hac habitasse",
+		"tags": "[tag5 tag3 tag7 tag2 important]",
+		"created_on": "1678579200000",
+		"last_updated_on": "1683936000000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb880")",
+	},
+	{
+		"title": "quam nec",
+		"content": "nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas",
+		"tags": "[tag5]",
+		"created_on": "1683331200000",
+		"last_updated_on": "1695340800000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb883")",
+	},
+	{
+		"last_updated_on": "1710460800000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb887")",
+		"title": "pede lobortis ligula important ipsu",
+		"content": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla",
+		"tags": "[tag5 tag7]",
+		"created_on": "1676764800000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb88b")",
+		"title": "aenean auctor",
+		"content": "tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus",
+		"tags": "[tag4 tag5]",
+		"created_on": "1688428800000",
+		"last_updated_on": "1698278400000",
+	},
+	{
+		"created_on": "1684368000000",
+		"last_updated_on": "1688169600000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb88c")",
+		"title": "consequat mongodb dui nec important erat",
+		"content": "erat eros viverra eget congue eget semper rutrum nulla nunc purus",
+		"tags": "[tag1 tag9 tag3]",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb88d")",
+		"title": "integer aliquet",
+		"content": "cursus urna ut tellus nulla ut erat id",
+		"tags": "[tag8]",
+		"created_on": "1693526400000",
+		"last_updated_on": "1701993600000",
+	},
+	{
+		"tags": "[tag4]",
+		"created_on": "1683763200000",
+		"last_updated_on": "1706400000000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb891")",
+		"title": "est quam",
+		"content": "mi sit amet lobortis sapien sapien non mi integer ac neque",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb893")",
+		"title": "ipsum integer a",
+		"content": "mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
+		"tags": "[tag6 tag9 tag8]",
+		"created_on": "1673395200000",
+		"last_updated_on": "1675814400000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb894")",
+		"title": "id sapien MongoDB in",
+		"content": "massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu",
+		"tags": "[tag3 important tag7 tag1]",
+		"created_on": "1675468800000",
+		"last_updated_on": "1697673600000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb897")",
+		"title": "curabitur gravida nisi",
+		"content": "sapien a libero nam dui proin leo odio porttitor id",
+		"tags": "[tag7 tag6 tag4 tag8 tag3]",
+		"created_on": "1683244800000",
+		"last_updated_on": "1692489600000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb899")",
+		"title": "nisl duis MongoDB",
+		"content": "parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum",
+		"tags": "[tag2 tag9 tag1 important tag7]",
+		"created_on": "1682294400000",
+		"last_updated_on": "1697155200000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb89c")",
+		"title": "commodo MongoDB vulputate",
+		"content": "ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id",
+		"tags": "[tag7 tag8 tag9]",
+		"created_on": "1690848000000",
+		"last_updated_on": "1708387200000",
+	},
+	{
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb89e")",
+		"title": "integer a nibh important nisi",
+		"content": "nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium",
+		"tags": "[tag2]",
+		"created_on": "1678838400000",
+		"last_updated_on": "1707004800000",
+	},
+	{
+		"last_updated_on": "1680048000000",
+		"_id": "ObjectID("65ff7ca2b3ccb299f2cbb8a1")",
+		"title": "quam sollicitudin",
+		"content": "ullamcorper augue a suscipit nulla elit ac nulla sed vel enim",
+		"tags": "[tag2 tag9 tag4]",
+		"created_on": "1674172800000",
+	},
+]
+
+
+
+List all notes that contain at least 3 different tags: 
+Count: 46
+
+
+
+Find notes that do not have any tags associated with them: 
+Count: 33
+
+
+
+Find notes that have been modified in the year 2024 so far: 
+Count: 26
+
+
+
+Aggregate notes by the month of creation and count the number of notes created each month: 
+[
+	{		"_id": "2023-01",		"count": "36",	},
+	{		"_id": "2023-02",		"count": "34",	},
+	{		"_id": "2023-03",		"count": "40",	},
+	{		"_id": "2023-04",		"count": "36",	},
+	{		"_id": "2023-05",		"count": "35",	},
+	{		"_id": "2023-06",		"count": "24",	},
+	{		"_id": "2023-07",		"count": "14",	},
+	{		"_id": "2023-08",		"count": "21",	},
+	{		"_id": "2023-09",		"count": "14",	},
+	{		"_id": "2023-10",		"count": "16",	},
+	{		"_id": "2023-11",		"count": "3",	},
+	{		"_id": "2023-12",		"count": "2",	},
+]
+
+
+
+Identify notes with the word "important" in the title but without an "important" tag: 
+Count: 49
+
+
+

@@ -1,54 +1,44 @@
 package main
 
 import (
-	"context"
-	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 
 	"github.com/joho/godotenv"
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
+
+	"github.com/siddhant-vij/Note-Taking-App/services"
 )
 
-func main() {
+func loadURI() string {
 	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found")
+		fmt.Println("No .env file found")
 	}
 
 	uri := os.Getenv("MONGODB_URI")
 	if uri == "" {
-		log.Fatal("You must set your 'MONGODB_URI' environment variable.")
-	}
-	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(uri))
-	if err != nil {
-		panic(err)
+		fmt.Println("You must set your 'MONGODB_URI' environment variable.")
 	}
 
-	defer func() {
-		if err := client.Disconnect(context.TODO()); err != nil {
-			panic(err)
-		}
-	}()
+	return uri
+}
 
-	coll := client.Database("noteTakingApp").Collection("notes")
-	title := "MongoDB Advanced"
+func main() {
+	uri := loadURI()
 
-	var result bson.M
-	err = coll.FindOne(context.TODO(), bson.D{{Key: "title", Value: title}}).Decode(&result)
-	if err == mongo.ErrNoDocuments {
-		fmt.Printf("No document was found with the title %s\n", title)
+	args := os.Args[1:]
+	if len(args) == 0 {
+		fmt.Println("No arguments provided. Please use:\n--c (for inserting data from CSV file)\n--j (for inserting data from JSON file)\n--q (for SQL queries)")
 		return
 	}
-	if err != nil {
-		panic(err)
+	switch args[0] {
+	case "--c", "--j":
+		err := services.NewFileReader(args[0], uri)
+		if err != nil {
+			fmt.Printf("Failed to process file: %s\n", err)
+		}
+	case "--q":
+		services.SqlQueries(uri)
+	default:
+		fmt.Println("Invalid argument.")
 	}
-
-	jsonData, err := json.MarshalIndent(result, "", "    ")
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("%s\n", jsonData)
 }
